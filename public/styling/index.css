@@ -1,0 +1,74 @@
+header{
+    margin-bottom: 25vh;
+}
+.headerTexture{
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+}
+.headerTexture img{
+    filter: invert(100%) opacity(0.1) brightness(1.5);
+    object-fit: cover;
+    width: 100%;
+}
+.headerText h2{
+    font-size: 4rem;
+    font-family: 'orbitron';
+    font-weight: bold;
+    color: #30da6b;
+}
+.headerText .col-lg-6:nth-child(1) h2{
+    color: #30da6b;
+    text-align: end;
+}
+.headerText .col-lg-6:nth-child(2) h2{
+    color: #ffffff;
+}
+.headerText h4{
+    color: #ffffff;
+}
+.headerText a{
+    color: white;
+}
+.headerText{
+    height: 80vh;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+}
+.guideArrow h2{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.purpose{
+    display: flex;
+    align-items: center;
+    height: 25vh;
+    background-color: #073444;
+}
+
+.purpose h2{
+    color: white;
+}
+
+@media (max-width: 767.98px) {
+    .headerText{
+        margin-top: 10vh;
+    }
+    .headerText h2{
+        font-size: 2.9rem;
+        text-align: center!important;
+    }
+    .headerText h4{
+        font-size: 1rem;
+    }
+    .headerTexture img{
+        height: 100%;
+    }
+    header{
+        margin-bottom: 5vh;
+    }
+}
+

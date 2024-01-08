@@ -1,0 +1,32 @@
+{
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "name": "ictpedia",
+  "version": "1.0.0",
+  "description": "A website for ICT students with the goal of providing enhanced and interactive learning experience through the use of online tools and applications.",
+  "main": "app.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shijisan/ICTpedia.git"
+  },
+  "keywords": [
+    "education",
+    "educational",
+    "ict",
+    "computers",
+    "technology",
+    "information",
+    "api"
+  ],
+  "author": "shijisan (Christian James Santos)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shijisan/ICTpedia/issues"
+  },
+  "homepage": "https://github.com/shijisan/ICTpedia#readme"
+}
