@@ -1,0 +1,44 @@
+.wikiSearch #searchResults .searchResultImage img{
+    height: 200px;
+    width: 300px;
+    object-fit: cover;
+    border-right: #f0f0f0 1.5px solid;
+}
+
+.wikiSearch{
+    background-color: #073444;
+}
+
+.wikiSearch input{
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    font-family: 'roboto';
+}
+
+.wikiSearch input::placeholder, .wikiSearch button{
+    font-family: 'roboto';
+}
+
+.wikiSearch h2{
+    color: white;
+    font-family: 'orbitron';
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.wikiSearch h3.text-center{
+    color: white;
+}
+
+.wikiSearch .card{
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+button.btn.primary-bg{
+    color: white;
+}
+
+button.btn.primary-bg:hover{
+    background-color: #2d9953;
+}

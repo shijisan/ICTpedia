@@ -53,6 +53,36 @@ header{
     color: white;
 }
 
+.wikiSearch{
+    background-color: #073444;
+}
+
+.wikiSearch input{
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    font-family: 'roboto';
+}
+
+.wikiSearch input::placeholder, .wikiSearch button{
+    font-family: 'roboto';
+}
+
+.wikiSearch h2{
+    color: white;
+    font-family: 'orbitron';
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+button.btn.primary-bg{
+    color: white;
+}
+
+button.btn.primary-bg:hover{
+    background-color: #2d9953;
+}
+
 @media (max-width: 767.98px) {
     .headerText{
         margin-top: 10vh;
