@@ -42,3 +42,16 @@ button.btn.primary-bg{
 button.btn.primary-bg:hover{
     background-color: #2d9953;
 }
+
+.scrollBackUp{
+    position: fixed;
+    bottom: 2.5%;
+    right: 2.5%;
+}
+.scrollBackUp button{
+    padding: 10px 20px;
+    border-radius: 100%;
+    border: none;
+    background-color: #09232c93;
+    color: white;
+}

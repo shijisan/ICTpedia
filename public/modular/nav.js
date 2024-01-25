@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     <a class="nav-link active" aria-current="page" href="../pages/index.html"><span><i class="fa-solid fa-house"></i>&nbsp;</span>HOME</a>
                 </li>
                 <li class="nav-item px-1">
-                    <a class="nav-link" href="#"><span><i class="fa-solid fa-book"></i>&nbsp;</span>WIKI</a>
+                    <a class="nav-link" id="scrollToWiki" href="#wikiSearch"><span><i class="fa-solid fa-book"></i>&nbsp;</span>WIKI</a>
                 </li>
                 <li class="nav-item px-1">
                     <a class="nav-link" href="#"><span><i class="fa-solid fa-robot"></i>&nbsp;</span>CHAT AI</a>
@@ -38,4 +38,23 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Add the stylesheet link to the head
     document.head.innerHTML += `<link rel="stylesheet" href="../modular/styling/nav.css">`;
+
+    // Get the link element with the class 'scrollToWiki'
+    const wikiLink = document.querySelector('.scrollToWiki');
+
+    // Add a click event listener to the 'WIKI' link
+    if (wikiLink) {
+        wikiLink.addEventListener('click', function(event) {
+            event.preventDefault(); 
+            // Get the target element
+            var targetElement = document.getElementById('wikiSearch');
+            // Scroll to the target element
+            targetElement.scrollIntoView({ behavior: 'smooth' });
+        });
+    }
+
 });
+
+
+
+

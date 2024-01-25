@@ -25,7 +25,7 @@
         <!-- modular -->
     </nav>
 
-    <div class="wikiSearch pt-5">
+    <div id="wikiSearch" class="wikiSearch pt-5">
 
         <div class="container py-5">
 
@@ -45,11 +45,15 @@
         
     </div>
 
+    <div class="scrollBackUp">
+        <button class="scrollToWiki" id="wikiSearch">&#8593;</button>
+    </div>
+
 
     <!-- scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script>
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/8d8079de50.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/8d8079de50.js" crossorigin="anonymous" defer></script>
 
 
     <script src="../modular/nav.js"></script>
@@ -89,11 +93,13 @@
                     '<div class="searchResultText p-5">' +
                         '<h3>' + result.title + '</h3>' +
                         '<p>' + result.snippet + '</p>' +
+                        '<a href="https://www.google.com/search?q=' + result.title + '&sca_esv=601398990&tbs=bkv:p&tbm=bks&sxsrf=ACQVn0-wvFEADpXC92OWcKBuE8byDljLhw:1706187242348&source=lnt&sa=X&ved=2ahUKEwjjk4DkyviDAxV7lK8BHeKYD1EQpwV6BAgBEBY&biw=1920&bih=957&dpr=1" target="_blank" >' + 'Learn more about "' + result.title + '"</a>'
                     '</div>'+
                 '</div>';
         });
     </script>
 
-
+    
+    
 </body>
 </html>
