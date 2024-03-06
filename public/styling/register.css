@@ -1,0 +1,52 @@
+.headerTexture{
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+}
+
+.headerTexture img{
+    filter: invert(100%) opacity(0.1) brightness(1.5);
+    object-fit: cover;
+    width: 100%;
+}
+
+form h1{
+    font-family: 'orbitron';
+    font-weight: bold;
+}
+
+form{
+    background-color: rgba(255, 255, 255, 0.5)!important;
+    width: 33% ;
+    height: max-content;
+    font-family: 'roboto';
+}
+
+input{
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+}
+
+input#register{
+    border: none;
+    color: white;
+    background: linear-gradient(to right, #37B663, #0A4A61);
+}
+
+input#login{
+    border: none;
+    color: white;
+    background: linear-gradient(to right, #37B663, #0A4A61);
+}
+
+input#register:hover{
+    background: linear-gradient(to right, #43db78, #1384ad);
+
+}
+
+input#login:hover{
+    background: linear-gradient(to right, #43db78, #1384ad);
+}
