@@ -1,5 +1,5 @@
 .wikiSearch #searchResults .searchResultImage img{
-    height: 200px;
+    height: -webkit-fill-available;
     width: 300px;
     object-fit: cover;
     border-right: #f0f0f0 1.5px solid;

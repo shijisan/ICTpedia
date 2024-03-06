@@ -85,20 +85,22 @@
         // Display the search results
         results.forEach(function(result) {
             // Wrap each result in a div with the class "card"
-            document.getElementById('searchResults').innerHTML += 
+            document.getElementById('searchResults').innerHTML +=
                 '<div class="card my-5 flex-row">' +
-                    '<div class="searchResultImage">' +
-                        '<img src="' + result.imageUrl + '" alt="' + result.title + ' image">' +
-                    '</div>' +
-                    '<div class="searchResultText p-5">' +
-                        '<h3>' + result.title + '</h3>' +
-                        '<p>' + result.snippet + '</p>' +
-                        '<a href="https://www.google.com/search?q=' + result.title + '&sca_esv=601398990&tbs=bkv:p&tbm=bks&sxsrf=ACQVn0-wvFEADpXC92OWcKBuE8byDljLhw:1706187242348&source=lnt&sa=X&ved=2ahUKEwjjk4DkyviDAxV7lK8BHeKYD1EQpwV6BAgBEBY&biw=1920&bih=957&dpr=1" target="_blank" >' + 'Learn more about "' + result.title + '"</a>'
-                    '</div>'+
+                '<div class="searchResultImage">' +
+                '<img src="' + result.imageUrl + '" alt="' + result.title + ' image">' +
+                '</div>' +
+                '<div class="searchResultText p-5">' +
+                '<h3>' + result.title + '</h3>' +
+                '<p>' + result.snippet + '</p>' +
+                '<ul>' +
+                '<li><a href="https://www.google.com/search?q=' + result.title + '&sca_esv=601398990&tbs=bkv:p&tbm=bks&sxsrf=ACQVn0-wvFEADpXC92OWcKBuE8byDljLhw:1706187242348&source=lnt&sa=X&ved=2ahUKEwjjk4DkyviDAxV7lK8BHeKYD1EQpwV6BAgBEBY&biw=1920&bih=957&dpr=1" target="_blank" >' + 'Academic resources for "' + result.title + '"</a></li>' +
+                '<li><a href="https://en.wikipedia.org/wiki/' + result.title + '" target="_blank" >' + 'View "' + result.title + '" on Wikipedia.' + '</a></li>' +
+                '</ul>' +
+                '</div>' +
                 '</div>';
         });
     </script>
-
     
     
 </body>
